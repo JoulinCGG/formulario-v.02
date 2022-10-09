@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Cadastro de Devs</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cadastro de Devs</h1>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Nome é obrigatório!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite seu email...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Digite um email válido!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Digite uma senha com no mínimo 8 caracteres</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Confirme sua senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>As senhas devem ser compatíveis</small>
+            </div>
+
+            <div class="campo">
+                <label>Em qual aplicação você desenvolve?</label><br>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label>Selecione as tecnologias que utiliza:</label>
+                <br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia1">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia1">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia1">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia1">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia1">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="JAVA">
+                <label for="tecnologia1">JAVA</label>
+            </div>
+
+                <div>
+                    <br>
+                    <label>Conte um pouco da sua experiência:</label>
+                    <textarea row="6" style="width: 32.3em" id="experiencia" name="experiencia"></textarea>
+                </div>
+            <br>
+            <button type="submit" onclick="checkInputs(); return false">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fc71d7d5e1.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
